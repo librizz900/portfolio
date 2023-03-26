@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif; 
+}
+/* nav styling */
+.navbar
+{
+    display: flex;
+    justify-content: space-between;
+    background-color: #595454;
+    position: fixed;
+}
+
+.leftnav
+{
+margin-left: 20px;
+}
+
+.leftnav h2
+{
+    font-size: 40px;
+    font-weight: 400;
+    color: #fff;
+}
+.nav_span
+{
+    color: yellow;
+}
+
+.rightnav li{
+    display: inline;
+
+}
+.rightnav a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #fff;
+    padding: 20px;
+}
+.rightnav a:hover{
+    color: #28a745;
+    font-size: 18px;
+
+}
+
+/* Hero section styling */
+.hero_section
+{ 
+    background-image: url(/citybackground1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 80vh; 
+}
+.hero_section
+{
+    position: relative;
+}
+
+.hero_section::before
+{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80%;
+    z-index: -1;
+    background-image: rgba(0,0,0,0.5);
+    opacity: 0.5;
+   
+}
+
+.hero_section::after
+{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80%;
+    z-index: -2;
+    background-color: url(/citybackground1.jpg);
+    opacity: 0.5;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
+ 
+.hero_section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+.hero h1
+{
+    font-size: 80px;
+    text-align: center;
+    margin-bottom: 15px;
+    color: #39e75f;
+}
+
+.hero p{
+    
+    line-height: 1.7;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 15px;
+    color: #fff;
+    z-index: 3;
+
+}
+.button_hero
+{
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    background-color: #595454;
+    padding: 10px;
+    width: 200px;
+    top: 50%;
+    left: 50%;
+    cursor: pointer;
+    color: #39e75f;
+    
+    
+
+    
+}
+.button_hero:hover{
+    color: #28a745;
+    background-color:#ffcc00 ;
+
+
+}
+.button_hero i{
+    color: #ffcc00;
+}
+.button_hero i:hover{
+    color: white;
+}
+
+.btn_container
+{
+    text-align: center;
+    color: #39e75f;
+
+}
+/* About styling */
+
+.about
+{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    /* column-gap: 50px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: yellow; */
+}
+
+.column
+{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+}
+
+.image_container
+{
+    /* width: 700px;
+    height: 500px;
+    border: 2px solid black; */
+}
+
+.image_container img
+{
+    height: 100%;
+    width: 100%;
+    
+    object-fit: cover;
+}
+
+.about_texts
+{
+    height: 100%;
+    background-color: #28a745;
+     line-height: 1.7;
+     display: flex;
+     flex-direction: column;
+     align-items: flex-start;
+     justify-content: center;
+     padding: 30px;
+     color: #fff;
+
+}
+
+.about_texts h2{
+    font-size: 40px;
+    font-weight: 300;
+    text-align: center;
+}
+.about_texts h4{
+    font-size: 20px;
+    color: #ffcc00;
+}
+.about_texts h1{
+    font-size: 30px;
+    color: #ffcc00;
+}
+
+.card_flex{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    text-align: start;
+    background-color: #ffcc00;
+    height: 300px;
+}
+
+/* footer styling */
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    background-color:black;
+    height: 200px;
+
+}
+footer p{
+    font-size: 18px;
+    color: #fff;
+    margin-top: 10px;
+    
+}
+
+.social a{
+    color: #fff;
+    padding: 30px;
+}
+/* service styling below */
+.card-header{
+    text-align: center;
+    color: #fff;
+    font-size: 35px;
+}
+
+.card-title{
+    color: #3a4c40;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.card-text{
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.btn-primary{
+    color: #fff;
+    border: solid white;
+    text-decoration: none;
+    padding: 10px;
+    background-color: #28a745;
+    border-radius: 10px;
+    width: 200px;
+    outline: transparent;
+    display: flex;
+    justify-items: center;
+    text-align: center;
+    align-items: center;
+    
+}
+
+.first-btn{
+     margin-left: 200px; 
+}
